@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Aoe2Sheet
 
 You can use the [editor on GitHub](https://github.com/Jineapple/Aoe2Sheet/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
