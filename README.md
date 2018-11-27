@@ -25,13 +25,9 @@ The info sheet is updated for Patch 5.8
 ## Age of Conquerors
 
 ![Pic](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/Pictures/AoC%20Civ%20Bonuses1.png)
-![Pic](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/Pictures/AoC%20Civ%20Bonuses2.png)
-![Pic](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/Pictures/AoC%20Civ%20Bonuses3.png)
 ![Pic](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/Pictures/AoC%20Tech%20Chart1.png)
 ![Pic](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/Pictures/AoC%20Unit%20Overview1.png)
 ![Pic](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/Pictures/AoC%20Unit%20Overview2.png)
-![Pic](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/Pictures/AoC%20Unit%20Overview3.png)
-![Pic](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/Pictures/AoC%20Unit%20Overview4.png)
 
 ### Download Links
 
