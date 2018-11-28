@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script type="text/javascript" src="code.js"></script>
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Welcome to Aoe2Sheet, the most space-efficient source for information on Age of Empires 2 | Aoe2Sheet</title>
+<meta name="generator" content="Jekyll v3.7.4">
+<meta property="og:title" content="Welcome to Aoe2Sheet, the most space-efficient source for information on Age of Empires 2">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A sheet with all sorts of useful information for playing Age of Empires II">
+<meta property="og:description" content="A sheet with all sorts of useful information for playing Age of Empires II">
+<link rel="canonical" href="https://jineapple.github.io/Aoe2Sheet/">
+<meta property="og:url" content="https://jineapple.github.io/Aoe2Sheet/">
+<meta property="og:site_name" content="Aoe2Sheet">
+<script type="application/ld+json">
+{"headline":"Welcome to Aoe2Sheet, the most space-efficient source for information on Age of Empires 2","@type":"WebSite","url":"https://jineapple.github.io/Aoe2Sheet/","name":"Aoe2Sheet","description":"A sheet with all sorts of useful information for playing Age of Empires II","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Jineapple/Aoe2Sheet">View on GitHub</a>
+          <a id="steam_banner" href="https://steamcommunity.com/sharedfiles/filedetails/?id=548698803">View on Steam</a>
+
+          <h1 id="project_title">Aoe2Sheet</h1>
+          <h2 id="project_tagline">A sheet with all sorts of useful information for playing Age of Empires II</h2>
+		  
+		  <a class="navlink" href="">Home</a>
+		  <a class="navlink" href="knowledge_base.html">Knowledge base</a>
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="welcome-to-aoe2sheet-the-most-space-efficient-source-for-information-on-age-of-empires-2">Welcome to Aoe2Sheet, the most space-efficient source for information on Age of Empires 2</h1>
+
+<p>The info sheets posted here are a labor of love with the goal to 
+replicate the Age of Kings Manual with more detailed information. Any 
+feedback is welcome, feel free to make an issue or pull request on 
+GitHub</p>
+
+<h2 id="monk-mechanics">Monk Mechanics</h2>
+
+<ul>
+  <li>Monks heal 1HP/0.4s, Missionaries 1HP/0.8s (So half as fast). Garrisoning in buildings only heals 0.1HP/s (or 0.4HP/s with herbal medicine, still not great).</li>
+  <li>Illumination actually increases faith regenartion by 87.5%, from 1.6 points per second to 3 points per second.</li>
+  <li>In the base game, fervor only increases the speed of monks carrying relics, not of all monks.</li>
+</ul>
+
+<h3 id="monk-conversion">Monk conversion</h2>
+<p>The conversion mechanic is quite complicated, for full information, you can see this forum post: <a>http://aoczone.net/viewtopic.php?f=428&t=119879&p=470767#p470767</a>
+Most of that doesn't matter to gameplay that much though, I'll give my summary with the most important points here:</p>
+
+<p>A monk takes between 5-12 seconds to convert a normal unit, and about 18-29 seconds for a building<br />
+In that time, there's roughly a 28% chance for conversion every 1.2s, for buildings it's about a 9% chance per 1.2s.<br />
+If you use multiple monks for one conversion, they work independently, which means the min/max times for the conversion don't change, but the chances for a conversion firing off soon after the min time increase.<br />
+Using two monks instead of one, or three instead of two makes a significant difference, but the improvement per monk quickly diminishes the more you add.</p>
+
+<p>An important point: Switching conversion targets, or the target temporarily moving out of range does not reset the count of conversion time so far. This means that e.g. if a Monk converts a knight for 5 seconds, the knight goes out of range, and then comes back, the knight can be converted immediately in the next monk sec instead of requiring another 5 seconds minimum. This only stops if the monk stops chasing the unit because it is too far away (or you task it to something else).<br />
+This also applies when switching targets. If Monk A and Monk B convert Unit C together for 5 seconds and Monk B then switches to converting unit D, unit D can be immediately converted instead of needing a min time.</p>
+
+<p>This is why the monk micro tactic of tasking all monks on one unit, deselecting one monk, targeting the next unit etc. works so well - part of the min time is eliminated. However, unless you have theocracy, you should click the ground or stop to avoid all monks losing faith on a succesful conversion about every 4-5 seconds.</p>
+
+<p>Now, there are a few things that can affect conversion chances:</p>
+
+<ol>
+<li> The scout- and eagle-line have a significantly lower chance of being converted. It's somewhere around 4-5% per 1.2s</li>
+
+<li> The teuton team bonus increases the minimum conversion time by 1s, maximum conversion time by around 2.5s and also halves the chances of your units being converted,
+to around 13% per 1.2s</li>
+
+<li> Faith increases minimum conversion time by 2.5s, maximum conversion time by 5s and lowers the chances of conversion to around 9% per 1.2s, roughly a third<br /><br />
+
+Buildings are also affected by the teuton/faith bonus.</li>
+
+<li> The spanish inquisition tech in the expansions lowers min/max time by 1 second,
+but for buildings it reduces it by -7/-7. It also increases conversion chance for buildings by about 2%.<br />
+So this tech should be considered if you want to convert buildings with your monks. </li>
+</ol>
+
+<h2 id="hidden-effects">Hidden Effects, Elevation, Multiple Arrows </h2>
+
+<p>The following are different pieces of information that I've found out through my own research or heard about (Credit to ZeroEmpires, Resonance22 and SpiritOfTheLaw on youtube!) during my work on this guide, but that don't fit anywhere on the overview itself. It's a bit of a random selection, but there are some interesting mechanics or quirks that I think not many people know about.</p>
+
+<p><h3>Hidden effects</h3>
+<ul>
+<li>Logistica not only causes Cataphracts to deal blast damage, it also increases their anti-infantry attack bonus by +6</li>
+<li>Ballistics does not affect melee units with ranged attack (Mameluke, Throwing Axeman, Gbeto) or Gunpowder units (except the Bombard Tower, however the cannonball is slow enough to still be easily dodgeable)</li>
+<li>Trebuchets have a fixed 80% accuracy against 1x1 and 2x2 buildings as opposed to the standard 15%</li>
+<li>Bonus damage is calculated when the target gets hit. So if your Arbalests stands on a hill but dies before his arrow hits, it won't deal 125% damage. (Very important for Japanese, do not pack your Trebuchet instantly; it is packed before the missile blasts in, and packed Trebuchets have no bonus damage against buildings!)<br />
+This can also be used in a mangonel fight: If the enemy mangonel is uphill, you can delete your mangonel before your hit connects, so your shot does 100% instead of 75% damage</li>
+<li>Farmers only work on the 2x2 square in the lower left corner of a farm. This means you should place the first farms on the top and right sides of a mill/TC to lower the walking distance for increase efficiency.</li>
+</ul>
+</p>
+
+
+<p><h3>Elevation</h3>
+<ul>
+<li>If units/buildings are uphill relative to an enemy target, they will deal 25% more damage and take 25% less. Increasing the height difference won't change anything. In case both are on the same floor level, no one gets bonus damage/defense. </li>
+<li>If units/buildings are on what looks like the top a cliff, they deal 25% more damage but still take the same amount of damage. Number difference of several cliffs won't change anything. Hill + cliff do not stack, in that case you only get +25% damage (cliff) and +25% defense (hill). In case both are on top of a cliff, no one gets bonus damage/defense.</li>
+<li>The one standing on a hill deals +25% damage against another one on top of a cliff, but the latter also gets +25% damage (cliff bonus damage not only annulates hill bonus defense, but overwrites it completely).</li>
+</ul>
+</p>
+
+<p><h3>Multiple arrows</h3>
+<ul>
+<li>Only the first Arrow of a Castle/Tower benefits from a hill attack bonus (or penalty), which means Castles on a hill take less damage, but hardly deal more.</li>
+<li>The first arrow of a Tower/Castle will actually just transmit the attack value of said Tower/Castle. The other arrows are extra "units" that may have different attack values.</li>
+<li>The Blacksmith techs, Chemistry and Yasama will affect all arrows</li>
+<li>Yeomen and Heated Shot only affect the first arrow</li>
+<li>Only the first arrow of a Chu Ko Nu is affected by any tech.</li>
+<li>If a unit fires multiple arrows, the reload speed gets slowed down. Instead of the theoretical values, I have added experimental values in the cheat sheet (ungarrisoned for Tower/Castle), however it's difficult to properly measure this. Also note that for the amount of garrison arrows, only the theoretical values are used. All relevant units:</li>
+</ul>
+</p>
+<table>
+<thead><th>Unit (extra arrows)</th><th>Castle (4)</th><th>Castle (20)</th><th>Chu Ko Nu (2)</th><th>Elite Chu Ko Nu (4)</th><th>Longboat (3)</th><th>Elite Longboat (3)</th><th>Tower (4)</th></thead>
+<tbody><tr><td>Theoretical Value</td><td>2</td><td>2</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+<tr><td>Theoretical Value</td><td>2.33</td><td>3.4</td><td>3.65</td><td>3.85</td><td>3.25</td><td>3.25</td><td>2.33</td></tr></tbody>
+</table>
+<p>For Towers and Castles it depends on how many extra arrows are fired of course.<br />
+The Organ Gun is not affected by this.</p>
+
+<p><h3>Extra arrows through garrisoned units:</h3>
+<ul>
+<li>Formula with example:
+<ol><li>Calculate the damage per second (dps) of the building and of the unit. This is the current attack value divided by reload speed (which you can find in my cheat sheet).
+Thus, a Castle has 11/2 = 5.5 dps (assuming it only has a single arrow) and an Arbalests has 6/2 = 3 dps (both without blacksmith upgrades).</li>
+<li>Divide unit dps by building dps to get the influence of one unit. Multiply by number of garrisoned units, round it down and you get the total number of extra arrows.
+In said example you get 3/5.5 = 0.5454... This value is rounded down, so 1 Arbalests does not add anything, 2 Arbalests will add 1 arrow, 4 Arbalests 2 arrows etc.</li>
+</ol></li>
+
+<li>Blacksmith upgrades, Chemistry etc. do change this dps value. The stronger the unit's dps (and the weaker the building's dps), the higher your number of extra arrows can get.</li>
+<li>Only archers, cav archers and gunpowder units will add extra arrows. Ranged units dealing Melee damage (Mameluke, Throwing Axeman, Gbeto) won't add anything.</li>
+<li>Note that Chu Ko Nu are really bad when garrisoned, because the formula takes the dps of their secondary arrows instead of their main one.</li>
+<li>Villagers are an exception, they are factored in with a fixed dps value of 2.5 which is also the case for any Teuton infantry with Crenellations researched. <i>Garrisoned Villagers are a huge damage boost in the beginning, but their influence decreases with more Tower upgrades researched.</i></li>
+<li>There is a special calculation for Bombard Towers : They will always get one less extra projectile than they should according to the formula.<br />
+If you pack a Bombard Tower with five Hand Cannoneers, you should get one extra shot (theoretically, because it's not the case).<br />
+Teutons though can garrison up to 10 units, so they have enough space for several cannonballs: 9 Hand Cannoneers or 7 ally Elite Janissary for 2nd, 10 ally E. Janissary for 3rd cannonball.</li>
+
+</ul>
+</p>
+
+
+<p><h3>Hidden Bonuses of aging up:</h3>
+There are several bonuses for buildings and some units when advancing.
+<ul>
+<li>Scout Cavalry LoS increases by 2 with every age (even without Light Cavalry/Hussar upgrade). Eagle-line LoS stays capped at 6.</li>
+<li>Scouts get +2 attack in Feudal, Eagle Scouts +3 attack, +2 vs cavalry, +1 vs. camels&ships in Castle.</li>
+<li>Outpost LoS increases by 2 with every age.</li>
+<li>All Buildings except Outposts, Towers, Castles and Walls will gain +1/+1 armor with every Age. (Most start with 0/7 and end up with 3/10, excluding other techs)</li>
+<li>Most Buildings will gain HP through the Ages.<br />
+The usual number is 1200/1500/1800/2100 through the ages. in the base game, this only affected Barracks, Stables and Archery Ranges.<br />
+In AK, this has been expanded to all buildings except Castles, Towers, Docks, TCs, Monasteries, Universities & Palisades (Might have missed one).<br />
+Blacksmith and Market have 1800 HP in Feudal, 2100 in Castle/Imp.<br />
+Stone Walls&Gates only have 900/1375 HP in Feudal but double it in Castle Age (to the original value in the base game).<br />
+Drop-off buildings have 600/800/1000/1000 HP instead of a flat 1000 HP.<br />
+Houses go from a flat 900 HP to 550/750/900/900.</li>
+
+</ul>
+</p>
+
+<h2 id="blast-damage">Blast Damage, Trading, Building, Repairing, Farming, Bugs  </h2>
+
+<p><h3>Blast Damage and Attack Ground:</h3>
+There are several bonuses for buildings and some units when advancing.
+<ul>
+<li>Battering Rams have 0 Blast radius (so no blast damage). But Capped Rams have 1.5 and Siege Rams 2 Blast radius, which means they can destroy two layers of wall at once. If you want to double-wall for some reason, leave one tile of space between the walls.</li>
+<li>Capped/Siege Rams deal the same amount of damage in the whole radius, but it only applies to building(?)</li>
+<li>Mangonels have 1, Onagers 1.25 and Siege Onagers 1.5 Blast radius. Note that Siege Onagers (in Expansions normal Onagers, too!) can cut down trees.</li>
+<li>Logistica (Byzantines) and Druzhina (Slavs) grants Cataphracts/infantry 5 true damage per attack (not affected by armor!) with 0.5 Blast radius.</li>
+<li>Elite War Elephants have 0.5 Blast radius and deal half the damage they would do in a direct attack.</li>
+<li>Battle Elephants also deal half the damage, though only in a 0.4 radius</li>
+<li>Bombard Cannons have 0.5 Blast radius, Petards 0.5 und Demolition Ship line 1.5/ 2.5/ 3.5 with the amount of damage decreasing depending on distance</li>
+<li>The intuition is misleading in case of Bombard Towers and (Elite) Cannon Galleons which have no Blast radius at all, so even slow moving targets can be missed easily.<br />
+Trebuchets and (Elite) Cannon Galleons only deal half the damage when using Attack Ground, but Bombard Cannons do full damage.<br />
+<i>Thus using Ground Attack with Cannon Galleon is mostly useless, but it can a great tool for Bombard Cannons.<i></li>
+<li>For some reason, if a ranged unit has Blast radius (e.g. Bombard Cannons or Britons Trebuchets with Warwolf) they won't always deal 100% damage against their target when they hit.</li>
+
+</ul>
+</p>
+
+<p><h3>Trading</h3>
+<ul>
+<li>Markets or Docks generate significantly more money the further they are apart. If the distance is doubled, the gold per trip more than doubles If you can protect it, a longer trade line is better</li>
+<li>Trading does not depend on diplomatic stance. You can trade with neutral markets, or even enemy markets (if they'd let you). If one of your teammembers resigns with his market still intact, you can delete his market to avoid the enemies using it.</li>
+<li>In the base game, Trade Cogs move faster, but generate less gold per trip, for about the same amount of gold over time. In the expansions, trade cog income has been buffed by 30%.</li>
+<li>You choose which of your allies markets your carts go to, but they choose which of your markets they use. They will choose the shortest trade route from that ally market you chose. The exception to this is if the cart has already reached the ally market at least once before a closer market is constructed, then it will stay on that trade route</li>
+<li>If one of your markets gets destroyed, the trade carts will instead go the one of your markets that is closest to them (and change the amount of gold they're carrying accordingly). If you do not have any markets left, they will stop where they are and lose any gold they were carrying.</li>
+<li> the ally market your carts trade with gets destroyed, they'll return to your market (and drop off gold there if they were carrying it), then stop.</li>
+<li>The same mechanics applies to Trade Cogs with Docks. This can negatively impact your water tradeline if you need closer docks to create Warships</li>
+<li>Dry Dock increases Trade Cog Speed, but it also decreases the gold they get per trip to offset that speed increase by the same amount. This is also the case for the Berbers' speed bonus.</li>
+<li>Trade Cogs are bigger than trade carts, which means they are more likely to bump into each other. This brings down their gold gather rate more quickly in big numbers compared to trade carts. If there about equally good water or land trade lines, Trade Carts will be preferable in most cases (especially in the base game)</li>
+</ul>
+</p>
+
+<p><h3>Building with multiple villagers:</h3>
+<ul>
+<li>If t is the build time for a building (with a single villager), and n is the number of villagers, the formula to calculate how long they need is 3*t/(n+2)<br />
+You can think of it like this: Each villager after the first one works only 1/3 as fast (or each additional 3 villagers will do the same work as the first one). First one works full-time, two will need 75% of the time (3/4), three will take 60% (3/5), four 50% (3/6) etc.</li>
+<li>As you can see in the table, Treadmill Crane compensates about one builder for small numbers
+<table>
+<thead><th>Time left</th><th>Number of vills</th><th>With Treadmill Crane</th></thead>
+<tbody>
+<tr><td>75%</td><td>2</td><td>1.33</td></tr>
+<tr><td>50%</td>4<td></td><td>3</td></tr>
+<tr><td>33%</td><td>7</td><td>5.5</td></tr>
+<tr><td>25%</td><td>10</td><td>8</td></tr></tbody></table></li>
+<li>Unless you need to get up your building as soon as possible (e.g. Tower, Castle, Town Center) it is more efficient to split up builders.</li>
+</ul>
+</p>
+
+<p><h3>Repairing:</h3>
+<ul>
+<li>Buildings: A single villager repairs ~750 HP/min, every additional one will add ~375 HP/min to that. </li>
+<li>Siege/Ships: A single villagers repairs ~187 HP/min, every additional one will add ~94 HP/min to that. (1/4 of building repair speed)</li>
+<li>Fully repairing a building/ship/siege weapon costs half of its resources. Civ bonuses are applied e.g. Incas pay 15% less stone.</li>
+<li>Techs like Masonry, Architecture and Hoarding increase the total number of Health Points. As it still costs the same resources to fully repair the building, you will effectively get more HP/cost when repairing. The repair rate stays the same.</li>
+<li>Exception of "fully repairing = half the construction prize" are Town Centers where you lose double their wood cost, but no stone (civ bonus does not work for Britons). Furthermore, you need to have at least 1 stone to be able to start repairing.</li>
+</ul>
+</p>
+
+<p><h3>Farming and Fish Traps:</h3>
+<p>Fish Traps and Farming are about equally fast food income. Wheelbarrow and Hand Cart put Farming ahead of Fish Traps, but with Gillnets researched, the gathering rate is again roughly equal. For Japanese, Fish Traps with Gillnets are even faster than farming.</p>
+<p>When farming, villagers collect from the left 2x2 square, which makes Farms placed on the right side of a TC or mill slightly more efficient, so it's usually a good idea to start placing them on the right first (unless this area is more vulnerable to attack). It's still worth it to fully surround Mills/TCs with farms.
+For Fish Traps, Fishing ships also usually collect from the left corner. However, if you place the Fish Trap right next to the dock and move the Fishing Ship on top, it can collect from it without moving, as seen here:</p>
+<p>With a bit of micro, you can fit a lot of Fish Traps around a Dock. Unless you are the Malay, make sure the Fishing Ships can still move though, as they can't rebuild the Fish Traps underneath them.</p>
+
+<p><h3>Bugs or "special features"</h3>
+<ul>
+<li>In order to reach ships on the shore more easily, villagers can repair from one tile away - this also works with buildings though, meaning that you can e.g. repair a tower that has been fully walled in. This is fixed in Userpatch 1.5</li>
+<li>In the base game, if starting in Post-Imperial Age, Mamelukes will get extra anti-cavalry armor, so they will effectively only take anti-camel damage. This has been changed in the expansions.</li>
+<li>While they are being constructed, units can pass through a diagonal gate at the corners. If you want to avoid this, you can build palisades over the unfinished foundations</li>
+</ul>
+</p>
+<p><h3></h3>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Aoe2Sheet maintained by <a href="https://github.com/Jineapple">Jineapple</a></p>
+        
+        <p>Published with <a href="https://pages.github.com/">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  
+
+</body></html>
