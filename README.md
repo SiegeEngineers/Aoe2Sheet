@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# Welcome to Aoe2Sheet, the most space-efficient source for information on Age of Empires 2
 
-You can use the [editor on GitHub](https://github.com/Jineapple/Aoe2Sheet/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## [Visit the Aoe2Sheet Website](http://www.aoe2sheet.info)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The info sheets posted here are a labor of love with the goal to replicate the Age of Kings Manual with more detailed information. Any feedback is welcome, feel free to make an issue or pull request.
+You can also leave a comment on the [steam page](https://steamcommunity.com/sharedfiles/filedetails/?id=548698803)
 
-### Markdown
+## Rise of Rajas
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The info sheet is updated for Patch 5.8
 
-```markdown
-Syntax highlighted code block
+### PDF Download Links
 
-# Header 1
-## Header 2
-### Header 3
+- [Full Sheet](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoRR/AoR%20HD%20Full%20Sheet.pdf)
+- [Civ Overview](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoRR/AoR%20HD%20Civ%20Overview.pdf)
+- [Tech Chart](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoRR/AoR%20HD%20Tech%20Chart.pdf)
+- [Unit Overview](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoRR/AoR%20HD%20Unit%20Overview.pdf)
 
-- Bulleted
-- List
+## Age of Conquerors
 
-1. Numbered
-2. List
+### PDF Download Links
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Jineapple/Aoe2Sheet/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [Full Sheet](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/AoC%20Full%20Sheet.pdf)
+- [Civ Overview](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/AoC%20Civ%20Overview.pdf)
+- [Tech Chart](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/AoC%20Tech%20Chart.pdf)
+- [Unit Overview](https://github.com/Jineapple/Aoe2Sheet/raw/master/AoC/AoC%20Unit%20Overview.pdf)
