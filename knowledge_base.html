@@ -64,6 +64,7 @@ It's a bit of a random selection, but there are some interesting mechanics or qu
 <li><a href="#building">Building with multiple villagers</a></li>
 <li><a href="#repairing">Repairing</a></li>
 <li><a href="#farming">Farming and fish traps</a></li>
+<li><a href="#miscellanous">Miscellaneous</a></li>
 <li><a href="#bugs">Bugs or "special features"</a></li>
 
 </ul>
@@ -244,6 +245,8 @@ You can think of it like this: Each villager after the first one works only 1/3 
 <li>Fully repairing a building/ship/siege weapon costs half of its resources. Civ bonuses are applied e.g. Incas pay 15% less stone.</li>
 <li>Techs like Masonry, Architecture and Hoarding increase the total number of Health Points. As it still costs the same resources to fully repair the building, you will effectively get more HP/cost when repairing. The repair rate stays the same.</li>
 <li>Exception of "fully repairing = half the construction prize" are Town Centers where you lose double their wood cost, but no stone (civ bonus does not work for Britons). Furthermore, you need to have at least 1 stone to be able to start repairing.</li>
+<li>Villagers can repair from 1 tile away. On Userpatch, this only works for ships/siege, buildings are excluded from this</li>
+<li>Garrisoned units will be ejected if the HP of the building drops below 20%, and you can't regarrison them until the HP is above that threshold</li>
 </ul>
 </p>
 <a href="#content-table">Up to content table</a>
@@ -253,11 +256,25 @@ You can think of it like this: Each villager after the first one works only 1/3 
 For Fish Traps, Fishing ships also usually collect from the left corner. However, if you place the Fish Trap right next to the dock and move the Fishing Ship on top, it can collect from it without moving, as seen here:</p>
 <p>With a bit of micro, you can fit a lot of Fish Traps around a Dock. Unless you are the Malay, make sure the Fishing Ships can still move though, as they can't rebuild the Fish Traps underneath them.</p>
 <a href="#content-table">Up to content table</a>
+<p><h3 id="miscellanous">Miscellaneous:</h3>
+<ul>
+<li>When a building is destroyed, any resources spent in the queue for units or techs are refunded</li>
+<li>When you have units garrisoned inside a building/another unit that is then destroyed/converted, your units will be ejected. The only exception is transport ships, you will lose your units in that case</li>
+<li>All Gaia units share line of sight. This can occasionally be useful in a double boar steal, where only one boar needs to have your scout in his sight for both boars to continue the chase. Other gaia units like birds and wolves can theoretically also help during a boar steal.</li>
+<li>Villagers will drop any resources when finishing a resource building, regardless if it fits the resource. This includes farms.</li>
+<li>Farms are the only building that immediately appear to the enemy with 1HP. This can sometimes be used to snipe farms and make your enemy lose 60 wood.</li>
+</ul>
+<a href="#content-table">Up to content table</a>
 <p><h3 id="bugs">Bugs or "special features"</h3>
 <ul>
 <li>In order to reach ships on the shore more easily, villagers can repair from one tile away - this also works with buildings though, meaning that you can e.g. repair a tower that has been fully walled in. This is fixed in Userpatch 1.5</li>
 <li>In the base game, if starting in Post-Imperial Age, Mamelukes will get extra anti-cavalry armor, so they will effectively only take anti-camel damage. This has been changed in the expansions.</li>
 <li>While they are being constructed, units can pass through a diagonal gate at the corners. If you want to avoid this, you can build palisades over the unfinished foundations</li>
+<li>When a villager is boxing himself into a 1-tile space between resources and a resource building, he will idle after the construction instead of starting to gather like normal</li>
+<li>There is a bug with the Mongol Nomads Unique Tech. You can start construction of a house (anything above 0HP), delete the foundations and still get 5 population space. This can save cost and map space.</li>
+<li>Monks can "heal" farms and fish traps, but it costs the same wood amount as it would to repair them</li>
+<li>In Age of Conquerors, the stone gate in the southwest-northeast direction only takes 30 seconds to build, even though it should be 70</li>
+<li>Units can garrison into buildings through 1 layer of walls</li>
 </ul>
 </p>
 <a href="#content-table">Up to content table</a>
