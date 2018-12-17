@@ -52,6 +52,7 @@ It's a bit of a random selection, but there are some interesting mechanics or qu
 
 <h2 id="content-table">Table of Contents</h2>
 <ul>
+<li><a href="#game-controls">Game Controls</a></li>
 <li><a href="#monk-mechanics">Monk Mechanics</a></li>
 <li><a href="#monk-conversion">Monk conversion</a></li>
 <li><a href="#hidden-effects">Hidden Effects</a></li>
@@ -64,9 +65,40 @@ It's a bit of a random selection, but there are some interesting mechanics or qu
 <li><a href="#building">Building with multiple villagers</a></li>
 <li><a href="#repairing">Repairing</a></li>
 <li><a href="#farming">Farming and fish traps</a></li>
+<li><a href="#map-infos">Map informations</a></li>
 <li><a href="#miscellanous">Miscellaneous</a></li>
 <li><a href="#bugs">Bugs or "special features"</a></li>
 
+</ul>
+
+<h3 id="game-controls">Game Controls</h3>
+
+<ul>
+  <li>Unit selection:
+	<ul>
+	  <li>Double-clicking a unit selects all units of that type visible on the screen</li>
+	  <li>If you hold Control or Shift, you can left-click a unit on the screen to add it to the selection. This can be combined with double-clicking</li>
+	  <li>If you hold Control, you can left-click a unit icon in the command bar to remove a unit from the selection</li>
+	  <li>If you hold Shift, you can left-click a unit icon in the command bar to remove all other unit types from the selection</li>
+	  <li>If you hold Shift+Control, you can left-click a unit icon in the command bar to remove that unit type from the selection</li>
+	  <li>You can create a control group by pressing Ctrl+number. You can then select that group by pressing that number, and focus on it by double-tapping it. (Alternatively, pressing space also centers your view on your current selection)</li>
+	  <li>On Userpatch 1.5, if the option is enabled, pressing Shift+number adds your current selection to that control group instead of replacing it like Ctrl+number does</li>
+	  <li>On HD, the hotkeys for Control Groups can be changed and you can use the Ctrl+0 group. On Userpatch this deletes a control group definition</li>
+	</ul>
+  </li>
+  <li>You can hold Shift to train five units at a time or buy/sell/tribute 500 resources at a time, as well as place multiple building foundations of the same type</li>
+  <li>You can look at <a href="https://www.aoezone.net/threads/userpatch-hotkeys.138012/#post-593702">this thread</a> for a reference on useful Userpatch hotkeys</li>
+  <li>When units are in line formation and you task them away further than 10 tiles (or patrol), they will form a vertical line (along the direction they are walking). Otherwise (less than 10 tiles) it will be horizontal.<br />
+	In some situations it can be useful to keep the horizontal alignment, e.g. when microing away archers or galleys as it's easier to fire with all units</li>
+	<li>In low numbers, box formation can be useful to have units closer together than they would be in line formation</li>
+	<li>When on aggressive or defensive stance, if a unit can't immediately reach the target you clicked, it will look for another nearby. In the early game e.g. with scouts or man-at-arms it can be useful to use the stand ground stance when focusing specific units.
+	You need to be careful with this as melee units on stand ground are very vulnerable if not microed</li>
+	<li>Building foundations reveal the ground beneath them and can be placed on partially black terrain. This can occasionally be useful to explore the edge of your vision if you suspect something specific there (e.g. a boar standing just outside explored territory)</li>
+	<li>Building foundations turn red if you can't place them. This can occasionally be useful to find enemy units and buildings in explored, but not visible territory. Note that farm foundations	will only turn red if buildings are blocking, not units</li>
+	<li>If you place building foundations underneath a gaia unit, they will move off. This can be used to save villagers from wolves/boars by placing e.g. a house underneath the chasing unit. Note that a wolf will reengage after moving off the foundation, while a boar will wander back</li>
+	<li>If you hit a unit hotkey just as you are clicking a technology, you can queue a unit for production after the technology finishes</li>
+	<li>If you place a tower in a free corner between an enemy gate and wall or two gates, you can ungarrison units on the other side (most relevant for the Arena map). It does not work between two walls</li>
+	<li>Once a straggler tree has been chopped down, you can delete it by building on it. If you aren't sure if it's a straggler tree, check the terrain underneath. Forest trees will have leaves beneath them, straggler trees other terrain</li>
 </ul>
 
 <h3 id="monk-mechanics">Monk Mechanics</h3>
@@ -113,6 +145,7 @@ So this tech should be considered if you want to convert buildings with your mon
 </ol>
 
 <a href="#content-table">Up to content table</a>
+
 <p><h3 id="hidden-effects">Hidden effects</h3>
 <ul>
 <li>Logistica not only causes Cataphracts to deal blast damage, it also increases their anti-infantry attack bonus by +6</li>
@@ -120,7 +153,8 @@ So this tech should be considered if you want to convert buildings with your mon
 <li>Trebuchets have a fixed 80% accuracy against 1x1 and 2x2 buildings as opposed to the standard 15%</li>
 <li>Bonus damage is calculated when the target gets hit. So if your Arbalests stands on a hill but dies before his arrow hits, it won't deal 125% damage. (Very important for Japanese, do not pack your Trebuchet instantly; it is packed before the missile blasts in, and packed Trebuchets have no bonus damage against buildings!)<br />
 This can also be used in a mangonel fight: If the enemy mangonel is uphill, you can delete your mangonel before your hit connects, so your shot does 100% instead of 75% damage</li>
-<li>Farmers only work on the 2x2 square in the lower left corner of a farm. This means you should place the first farms on the top and right sides of a mill/TC to lower the walking distance for increase efficiency.</li>
+<li>Farmers only work on the 2x2 square in the lower left corner of a farm. This means that farms on the top and right sides of a mill/TC are more efficient, so you might want to place them there first<br />
+However, this is a small effect and there can be advantages to different placement, such as the farm being on the safe side away from the enemy, or away from a deer patch so the farmer doesn't interfere during a deer push.</li>
 </ul>
 </p>
 
@@ -181,7 +215,7 @@ There are several bonuses for buildings and some units when advancing.
 <li>All Buildings except Outposts, Towers, Castles and Walls will gain +1/+1 armor with every Age. (Most start with 0/7 and end up with 3/10, excluding other techs)</li>
 <li>Most Buildings will gain HP through the Ages.<br />
 The usual number is 1200/1500/1800/2100 through the ages. in the base game, this only affected Barracks, Stables and Archery Ranges.<br />
-In AK, this has been expanded to all buildings except Castles, Towers, Docks, TCs, Monasteries, Universities & Palisades (Might have missed one).<br />
+In the expansions, this has been expanded to all buildings except Castles, Towers, Docks, TCs, Monasteries, Universities & Palisades (Might have missed one).<br />
 Blacksmith and Market have 1800 HP in Feudal, 2100 in Castle/Imp.<br />
 Stone Walls&Gates only have 900/1375 HP in Feudal but double it in Castle Age (to the original value in the base game).<br />
 Drop-off buildings have 600/800/1000/1000 HP instead of a flat 1000 HP.<br />
@@ -251,11 +285,28 @@ You can think of it like this: Each villager after the first one works only 1/3 
 </p>
 <a href="#content-table">Up to content table</a>
 <p><h3 id="farming">Farming and Fish Traps:</h3>
+<p>With each stop at a farm, a farmer gathers 1/4 of his carry capacity. That's why a carry capacity increase is a direct boost to the farming rate</p>
 <p>Fish Traps and Farming are about equally fast food income. Wheelbarrow and Hand Cart put Farming ahead of Fish Traps, but with Gillnets researched, the gathering rate is again roughly equal. For Japanese, Fish Traps with Gillnets are even faster than farming.</p>
 <p>When farming, villagers collect from the left 2x2 square, which makes Farms placed on the right side of a TC or mill slightly more efficient, so it's usually a good idea to start placing them on the right first (unless this area is more vulnerable to attack). It's still worth it to fully surround Mills/TCs with farms.
 For Fish Traps, Fishing ships also usually collect from the left corner. However, if you place the Fish Trap right next to the dock and move the Fishing Ship on top, it can collect from it without moving, as seen here:</p>
 <p>With a bit of micro, you can fit a lot of Fish Traps around a Dock. Unless you are the Malay, make sure the Fishing Ships can still move though, as they can't rebuild the Fish Traps underneath them.</p>
 <a href="#content-table">Up to content table</a>
+
+<p><h3 id="map-infos">Map informations:</h3>
+<p>There are restrictions on where resources can spawn on a map. This can be useful to judge whether an enemy might be nearby or how far away your sheep/boar/deer can be. Note that this can change depending on the map script - most standard map follow similar rules, but there might be deviations
+<ul>
+<li>Starting sheep spawn 10-12 tiles away from the TC</li>
+<li>Extra sheep and deer spawn 14-30 tiles away from the TC</li>
+<li>Boars spawn 16-22 tiles away from the TC</li>
+<li>Cliffs spawn a minimum of 22 tiles away from Town Centers</li>
+<li>In most maps, Town Centers will be at an elevation of 0, so if you notice a crater there might be a TC at the middle</li>
+<li>Neutral gold/stone piles usually have less tiles than player gold/stone (e.g. 3 tiles on Arabia). If you see these, wolves or relics you're usually away from player lands</li>
+<li>Similarly you can look for player gold/stone piles or chopped trees, as well as straggler trees, these usually indicate there's a player nearby</li>
+<li>If you want to analyze a specific map, it can be useful to look at the .rms script in a text editor to find the exact distances for resources.</li>
+
+</ul>
+<a href="#content-table">Up to content table</a>
+
 <p><h3 id="miscellanous">Miscellaneous:</h3>
 <ul>
 <li>When a building is destroyed, any resources spent in the queue for units or techs are refunded</li>
@@ -263,8 +314,12 @@ For Fish Traps, Fishing ships also usually collect from the left corner. However
 <li>All Gaia units share line of sight. This can occasionally be useful in a double boar steal, where only one boar needs to have your scout in his sight for both boars to continue the chase. Other gaia units like birds and wolves can theoretically also help during a boar steal.</li>
 <li>Villagers will drop any resources when finishing a resource building, regardless if it fits the resource. This includes farms.</li>
 <li>Farms are the only building that immediately appear to the enemy with 1HP. This can sometimes be used to snipe farms and make your enemy lose 60 wood.</li>
+<li>For technologies that add a set amount of HP, like loom and bloodlines, if a unit is damaged already, its current HP will only be increased proportionally. So a Knight at 50/100 HP will be 60/120 after Bloodlines (instead of 70/120).</li>
+<li>If you click an enemy's building you can see where it is rallied to on the minimap.</li>
 </ul>
 <a href="#content-table">Up to content table</a>
+
+
 <p><h3 id="bugs">Bugs or "special features"</h3>
 <ul>
 <li>In order to reach ships on the shore more easily, villagers can repair from one tile away - this also works with buildings though, meaning that you can e.g. repair a tower that has been fully walled in. This is fixed in Userpatch 1.5</li>
