@@ -57,6 +57,7 @@ It's a bit of a random selection, but there are some interesting mechanics or qu
 <li><a href="#monk-conversion">Monk conversion</a></li>
 <li><a href="#hidden-effects">Hidden Effects</a></li>
 <li><a href="#elevation">Elevation</a></li>
+<li><a href="#garrisoning">Garrisoning</a></li>
 <li><a href="#multiple-arrows">Multiple Arrows</a></li>
 <li><a href="#garrison-arrows">Extra arrows through garrisoned units</a></li>
 <li><a href="#age-bonuses">Hidden Bonuses of aging up</a></li>
@@ -101,8 +102,9 @@ It's a bit of a random selection, but there are some interesting mechanics or qu
 	<li>Once a straggler tree has been chopped down, you can delete it by building on it. If you aren't sure if it's a straggler tree, check the terrain underneath. Forest trees will have leaves beneath them, straggler trees other terrain</li>
 	<li>For a boar to keep aggression, you need to hit it a second time <em>while it is targeting you</em>. Sometimes it can lose aggression right after the first hit, in which case just hitting it twice is not enough</li>
 	<li>Boars have a line of sight of 4, and the boar lurer/scout/eagle needs to stay in that line of sight to keep aggression. Gaia units share line of sight which can occasionally be useful for situations like a double boar lure</li>
-	<li>During a boar lure with a villager, it can be useful to temporarily block the boar either with your scout or sheep to keep the boar lurer safe. Keep the line of sight mentioned above in mind though</li>
 	<li>When a deer is walking back too early during a push with a scout/eagle, you can shoot it once with a villager to make it "pushable" again. Shooting it a second time will kill it though</li>
+	<li>During a boar lure with a villager, it can be useful to temporarily block the boar either with your scout or sheep to keep the boar lurer safe. Keep the line of sight mentioned above in mind though</li>
+	<li>Blocking units can be useful at other times as well. You can e.g. use one scout to block an enemy villager's path back to safety while your others units attack it.</li>
 </ul>
 
 <a href="#content-table">Up to content table</a>
@@ -170,6 +172,19 @@ This can also be used in a mangonel fight: If the enemy mangonel is uphill, you 
 <li>If units/buildings are on what looks like the top a cliff, they deal 25% more damage but still take the same amount of damage. Number difference of several cliffs won't change anything. Hill + cliff do not stack, in that case you only get +25% damage (cliff) and +25% defense (hill). In case both are on top of a cliff, no one gets bonus damage/defense.</li>
 <li>The one standing on a hill deals +25% damage against another one on top of a cliff, but the latter also gets +25% damage (cliff bonus damage not only annulates hill bonus defense, but overwrites it completely).</li>
 <li>Elevation multipliers are applied before minimum damage, which means that if you only deal minimum damage, you do not get a hill bonus (e.g. with tower vs. tower on different elevations)</li>
+</ul>
+</p>
+<a href="#content-table">Up to content table</a>
+<p><h3 id="garrisoning">Garrisoning</h3>
+<ul>
+<li>There are different restrictions on what units can garrison in different buildings. Siege Units cannot garrison in buildings. Mounted units can only garrison in castles. Infantry, Monks, Archers and Villagers can garrison in Town Centers, Towers and Castles</li>
+<li>Only Infantry, Archers and Villagers can garrison in Rams and Siege Towers. Infantry units give a 0.05 movement speed bonus per unit, and a +10 damage against buildings bonus for rams.</li>
+<li>All units can garrison in transport ships (on Userpatch, even herdables like sheep)</li>
+<li>Independent from the above restrictions, all units can be garrisoned in their production buildigns directly after being produced by setting the gather point on the production building itself. However, once they leave the building they cannot regarrison there.</li>
+<li>Garrisoned units will be ejected if the HP of the building drops below 20%, and you can't regarrison them until the HP is above that threshold</li>
+<li>Units garrisoned in Rams or Siege Towers will only be ejected when these are destroyed. Units will also be ejected if the Building, Ram or Siege Tower gets converted.
+<li>If a transport ship is destroyed, you will lose your units. If it is converted, your units will remain inside but you have no access to them, so your enemy can keep them alive to block your population space.</li>
+<li>Units can garrison into buildings through 1 layer of walls</li>
 </ul>
 </p>
 <a href="#content-table">Up to content table</a>
@@ -286,7 +301,6 @@ You can think of it like this: Each villager after the first one works only 1/3 
 <li>Techs like Masonry, Architecture and Hoarding increase the total number of Health Points. As it still costs the same resources to fully repair the building, you will effectively get more HP/cost when repairing. The repair rate stays the same.</li>
 <li>Exception of "fully repairing = half the construction prize" are Town Centers where you lose double their wood cost, but no stone (civ bonus does not work for Britons). Furthermore, you need to have at least 1 stone to be able to start repairing.</li>
 <li>Villagers can repair from 1 tile away. On Userpatch, this only works for ships/siege, buildings are excluded from this</li>
-<li>Garrisoned units will be ejected if the HP of the building drops below 20%, and you can't regarrison them until the HP is above that threshold</li>
 </ul>
 </p>
 <a href="#content-table">Up to content table</a>
@@ -318,7 +332,6 @@ You can think of it like this: Each villager after the first one works only 1/3 
 <p><h3 id="miscellanous">Miscellaneous:</h3>
 <ul>
 <li>When a building is destroyed, any resources spent in the queue for units or techs are refunded</li>
-<li>When you have units garrisoned inside a building/another unit that is then destroyed/converted, your units will be ejected. The only exception is transport ships, you will lose your units in that case</li>
 <li>All Gaia units share line of sight. This can occasionally be useful in a double boar steal, where only one boar needs to have your scout in his sight for both boars to continue the chase. Other gaia units like birds and wolves can theoretically also help during a boar steal.</li>
 <li>Villagers will drop any resources when finishing a resource building, regardless if it fits the resource. This includes farms.</li>
 <li>Farms are the only building that immediately appear to the enemy with 1HP. This can sometimes be used to snipe farms and make your enemy lose 60 wood.</li>
@@ -333,11 +346,10 @@ You can think of it like this: Each villager after the first one works only 1/3 
 <li>In order to reach ships on the shore more easily, villagers can repair from one tile away - this also works with buildings though, meaning that you can e.g. repair a tower that has been fully walled in. This is fixed in Userpatch 1.5</li>
 <li>In the base game, if starting in Post-Imperial Age, Mamelukes will get extra anti-cavalry armor, so they will effectively only take anti-camel damage. This has been changed in the expansions.</li>
 <li>While they are being constructed, units can pass through a diagonal gate at the corners. If you want to avoid this, you can build palisades over the unfinished foundations</li>
-<li>When a villager is boxing himself into a 1-tile space between resources and a resource building, he will idle after the construction instead of starting to gather like normal</li>
+<li>When a villager is boxing himself into a 1-tile space between resources and a resource building, he will idle after the construction instead of starting to gather like normal. To avoid this, you can have a villager on the outside finish the construction while the villager on the inside is gathering resources.</li>
 <li>There is a bug with the Mongol Nomads Unique Tech. You can start construction of a house (anything above 0HP), delete the foundations and still get 5 population space. This can save cost and map space.</li>
 <li>Monks can "heal" farms and fish traps, but it costs the same wood amount as it would to repair them</li>
 <li>In Age of Conquerors, the stone gate in the southwest-northeast direction only takes 30 seconds to build, even though it should be 70</li>
-<li>Units can garrison into buildings through 1 layer of walls</li>
 </ul>
 </p>
 <a href="#content-table">Up to content table</a>
