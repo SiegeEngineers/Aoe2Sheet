@@ -105,6 +105,10 @@ It's a bit of a random selection, but there are some interesting mechanics or qu
 	<li>When a deer is walking back too early during a push with a scout/eagle, you can shoot it once with a villager to make it "pushable" again. Shooting it a second time will kill it though</li>
 	<li>During a boar lure with a villager, it can be useful to temporarily block the boar either with your scout or sheep to keep the boar lurer safe. Keep the line of sight mentioned above in mind though</li>
 	<li>Blocking units can be useful at other times as well. You can e.g. use one scout to block an enemy villager's path back to safety while your others units attack it.</li>
+	<li>Units on defensive stance will retreat a few tiles if a ranged unit outside their line of sight attacks them. On aggressive stance, they will pursue the attacking unit instead</li>
+	<li>By default, Rams are on defensive stance. It can be useful to put them on aggressive to have them auto-attack siege units and towers that attack them.</li>
+	<li>Rams will only auto-attack Buildings (not Walls) and siege units. Note that Ballista Elephants are classified as cavalry, so Rams will not auto-attack them and retreat when hit instead</li>
+	<li>For units with minimum range, it can be useful to put them on stand ground when they are in larger groups. This way, they will not retreat from melee units attacking them but focus on another unit outside of minimum range instead. With enough units, they can cover each other</li>
 </ul>
 
 <a href="#content-table">Up to content table</a>
@@ -361,7 +365,7 @@ You can think of it like this: Each villager after the first one works only 1/3 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        
+        <p>If you notice any errors or have suggestions on what should be added, please create an issue <a href="https://github.com/Jineapple/Aoe2Sheet/issues">here</a></p>
         <p class="copyright">Aoe2Sheet maintained by <a href="https://github.com/Jineapple">Jineapple</a></p>
         
         <p>Published with <a href="https://pages.github.com/">GitHub Pages</a></p>
