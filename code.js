@@ -7,5 +7,5 @@ function toggleHidden(x) {
  }
 
 function toggleCall(el) {
-	toggleHidden(el.nextSibling);
+	toggleHidden(el.nextElementSibling);
 }
