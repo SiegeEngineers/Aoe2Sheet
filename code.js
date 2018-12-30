@@ -7,11 +7,5 @@ function toggleHidden(x) {
  }
 
 function toggleCall(el) {
-	if (el.classList.contains("rajas")) {		
-        const toggle  = document.getElementsByClassName('sheet-images rajas')[0];
-		toggleHidden(toggle);
-    } else if (el.classList.contains("aoc")) {
-        const toggle  = document.getElementsByClassName('sheet-images aoc')[0];
-		toggleHidden(toggle);
-    }
+	toggleHidden(el.nextSibling);
 }
