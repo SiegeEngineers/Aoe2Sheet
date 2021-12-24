@@ -1,6 +1,6 @@
 # Welcome to Aoe2Sheet, the most space-efficient source for information on Age of Empires 2
 
-## [Visit the Aoe2Sheet Website](http://www.aoe2sheet.info)
+## [Visit the Aoe2Sheet Website](https://siegeengineers.github.io/Aoe2Sheet/)
 
 The info sheets posted here are a labor of love with the goal to replicate the Age of Kings Manual with more detailed information. Any feedback is welcome, feel free to make an issue or pull request.
 You can also leave a comment on the [steam page](https://steamcommunity.com/sharedfiles/filedetails/?id=548698803)
